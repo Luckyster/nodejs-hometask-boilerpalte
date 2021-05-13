@@ -11,6 +11,14 @@ class UserService {
         }
         return item;
     }
+
+    create(data){
+        return UserRepository.create(data)
+    }
+
+    delete(id){
+        return UserRepository.delete(id)
+    }
 }
 
 module.exports = new UserService();

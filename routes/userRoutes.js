@@ -6,5 +6,9 @@ const { responseMiddleware } = require('../middlewares/response.middleware');
 const router = Router();
 
 // TODO: Implement route controllers for user
+router.post('/', createUserValid, (req, res)=>{
+	// const user = UserService
+	console.log('work')
+})
 
 module.exports = router;
