@@ -19,6 +19,12 @@ class UserService {
     delete(id){
         return UserRepository.delete(id)
     }
+    update(id, data){
+        return UserRepository.update(id, data)
+    }
+    findAll(){
+        return UserRepository.getAll()
+    }
 }
 
 module.exports = new UserService();
